@@ -129,7 +129,7 @@ services:
       STREAMS_SCHEMA_REGISTRY_PORT: 8081
 
   rest-proxy:
-    build: ./cp-docker-images/debian/kafka-rest/
+    build: ./kafka-rest/
     depends_on:
       - broker
       - schema-registry
